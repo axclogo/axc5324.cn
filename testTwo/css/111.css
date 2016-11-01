@@ -1,0 +1,19 @@
+h1 {
+	color: cornflowerblue;
+	border: 2px;
+}
+
+p {
+	color: cornflowerblue;
+	border: 2px;
+}
+body{
+	background-color: antiquewhite;
+	background-image: url(HBuilder.png),url(logo.bmp);); /*将图片设置为背景*/
+	background-repeat: no-repeat;    /*禁止重复显示*/
+	background-attachment: fixed;   /*禁止随着滚动条滚动*/
+	background-position: 50% 50%; /*设置图片位置*/
+	/*background-size: 60px 200px;*/   /*设置图片大小*/
+	/*background:-webkit-linear-gradient(top, #c42300 0%,#22cc00 33%);*/ /*设置渐变色*/
+	
+}
