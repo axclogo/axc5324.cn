@@ -29,19 +29,19 @@
 							</div>
 						</div>
 
-</br>
+						</br>
 
 						<ul class="mui-table-view mui-grid-view ">
 							<li class="mui-table-view-cell mui-media mui-col-xs-6 ">
 								<a href="# ">
 									<img class="mui-media-object " src="http://img0.imgtn.bdimg.com/it/u=3921124225,704883201&fm=21&gp=0.jpg">
-									<div class="mui-media-body ">文字说明1</div>
+									<div class="mui-media-body " style="font-size: 70%;">文字说明1</div>
 								</a>
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-6 ">
 								<a href="# ">
 									<img class="mui-media-object " src="http://img4.imgtn.bdimg.com/it/u=3564487791,3965049059&fm=21&gp=0.jpg">
-									<div class="mui-media-body ">文字说明2</div>
+									<div class="mui-media-body " style="font-size: 70%;">文字说明2</div>
 								</a>
 							</li>
 						</ul>
@@ -52,8 +52,8 @@
 									<a href="javascript:;">
 										<img class="mui-media-object mui-pull-left" src="http://img1.imgtn.bdimg.com/it/u=1655368187,3607410426&fm=21&gp=0.jpg">
 										<div class="mui-media-body">
-											幸福
-											<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+											<font size="2">幸福</font>
+											<p class="mui-ellipsis" style="font-size: 70%;">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
 										</div>
 									</a>
 								</li>
@@ -61,17 +61,8 @@
 									<a href="javascript:;">
 										<img class="mui-media-object mui-pull-left" src="http://img5.imgtn.bdimg.com/it/u=1685224671,747072644&fm=21&gp=0.jpg">
 										<div class="mui-media-body">
-											木屋
-											<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
-										</div>
-									</a>
-								</li>
-								<li class="mui-table-view-cell mui-media">
-									<a href="javascript:;">
-										<img class="mui-media-object mui-pull-left" src="http://img0.imgtn.bdimg.com/it/u=1003268023,3748108893&fm=21&gp=0.jpg">
-										<div class="mui-media-body">
-											CBD
-											<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+											<font size="2">木屋</font>
+											<p class="mui-ellipsis" style="font-size: 70%;">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
 										</div>
 									</a>
 								</li>
@@ -86,16 +77,19 @@
 				<!-- 主页面标题 -->
 				<header class="mui-bar mui-bar-nav">
 					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+					<a class="mui-icon mui-action-menu mui-icon-refresh mui-pull-right" href="index.html"></a>
+
 					<h1 class="mui-title">Axc的第一个Web App</h1>
 				</header>
+				
 				<nav class="mui-bar mui-bar-tab">
 					<a class="mui-tab-item mui-active">
 						<span class="mui-icon mui-icon-home"></span>
 						<span class="mui-tab-label">首页</span>
 					</a>
-					<a class="mui-tab-item">
-						<span class="mui-icon mui-icon-phone"></span>
-						<span class="mui-tab-label">电话</span>
+					<a class="mui-tab-item" href="javascript:void(0);" onclick="clickRefresh()">
+						<span class="mui-icon mui-icon-phone" ></span>
+						<span class="mui-tab-label">刷新</span>
 					</a>
 					<a class="mui-tab-item">
 						<span class="mui-icon mui-icon-email"></span>
@@ -204,6 +198,12 @@
 		<script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			mui.init()
+			function clickRefresh(){
+				alert('asdasdasdasd')
+//				document.href = "www.baidu.com"
+window.location.href = 'Page/RefreshPage.html';
+			}
+			
 		</script>
 	</body>
 
