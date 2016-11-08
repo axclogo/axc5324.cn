@@ -81,14 +81,14 @@
 
 					<h1 class="mui-title">Axc的第一个Web App</h1>
 				</header>
-				
+
 				<nav class="mui-bar mui-bar-tab">
 					<a class="mui-tab-item mui-active">
 						<span class="mui-icon mui-icon-home"></span>
 						<span class="mui-tab-label">首页</span>
 					</a>
-					<a class="mui-tab-item" href="javascript:void(0);" onclick="clickRefresh()">
-						<span class="mui-icon mui-icon-phone" ></span>
+					<a class="mui-tab-item" href="javascript:void(1);" onclick="clickRefresh()">
+						<span class="mui-icon mui-icon-phone"></span>
 						<span class="mui-tab-label">刷新</span>
 					</a>
 					<a class="mui-tab-item">
@@ -198,12 +198,10 @@
 		<script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			mui.init()
-			function clickRefresh(){
-				alert('asdasdasdasd')
-//				document.href = "www.baidu.com"
-window.location.href = 'Page/RefreshPage.html';
+
+			function clickRefresh() {
+				window.location.href = 'Page/RefreshPage.html';
 			}
-			
 		</script>
 	</body>
 
