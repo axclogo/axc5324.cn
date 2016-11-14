@@ -6,203 +6,87 @@
 		<title>Axc Home</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
 
-		<!-- 主界面移动、菜单不动 -->
-		<div class="mui-off-canvas-wrap mui-draggable">
-			<!-- 菜单容器 -->
-			<aside class="mui-off-canvas-left" id="offCanvasSide">
-				<div class="mui-scroll-wrapper">
-					<div class="mui-scroll">
-						<!-- 菜单具体展示内容 -->
+		<header class="mui-bar mui-bar-nav">
+			<a id="info" class="mui-icon mui-icon-refresh-filled mui-pull-right" style="color: #999;" href="index.html"></a>
+			<h1 class="mui-title">Axc</h1>
+		</header>
 
-						<div id="slider" class="mui-slider">
-							<div class="mui-slider-group mui-slider-loop">
-								<!-- 第一张 -->
-								<div class="mui-slider-item">
-									<a href="#">
-										<img src="http://img2.imgtn.bdimg.com/it/u=626458516,3532912012&fm=21&gp=0.jpg">
-									</a>
-								</div>
-							</div>
-						</div>
+		<div class="mui-content">
 
-						</br>
-
-						<ul class="mui-table-view mui-grid-view ">
-							<li class="mui-table-view-cell mui-media mui-col-xs-6 ">
-								<a href="# ">
-									<img class="mui-media-object " src="http://img0.imgtn.bdimg.com/it/u=3921124225,704883201&fm=21&gp=0.jpg">
-									<div class="mui-media-body " style="font-size: 70%;">文字说明1</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-6 ">
-								<a href="# ">
-									<img class="mui-media-object " src="http://img4.imgtn.bdimg.com/it/u=3564487791,3965049059&fm=21&gp=0.jpg">
-									<div class="mui-media-body " style="font-size: 70%;">文字说明2</div>
-								</a>
-							</li>
-						</ul>
-
-						<div style="overflow: scroll;">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell mui-media">
-									<a href="javascript:;">
-										<img class="mui-media-object mui-pull-left" src="http://img1.imgtn.bdimg.com/it/u=1655368187,3607410426&fm=21&gp=0.jpg">
-										<div class="mui-media-body">
-											<font size="2">幸福</font>
-											<p class="mui-ellipsis" style="font-size: 70%;">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
-										</div>
-									</a>
-								</li>
-								<li class="mui-table-view-cell mui-media">
-									<a href="javascript:;">
-										<img class="mui-media-object mui-pull-left" src="http://img5.imgtn.bdimg.com/it/u=1685224671,747072644&fm=21&gp=0.jpg">
-										<div class="mui-media-body">
-											<font size="2">木屋</font>
-											<p class="mui-ellipsis" style="font-size: 70%;">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/lunbo3.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/lunbo0.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/lunbo1.jpeg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/lunbo2.jpeg">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="img/lunbo3.jpeg">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="img/lunbo0.jpg">
+						</a>
 					</div>
 				</div>
-			</aside>
-			<!-- 主页面容器 -->
-			<div class="mui-inner-wrap">
-				<!-- 主页面标题 -->
-				<header class="mui-bar mui-bar-nav">
-					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
-					<a class="mui-icon mui-action-menu mui-icon-refresh mui-pull-right" href="index.html"></a>
-
-					<h1 class="mui-title">Axc的第一个Web App</h1>
-				</header>
-
-				<nav class="mui-bar mui-bar-tab">
-					<hr />
-					<a class="mui-bar-footer mui-bar-tab">
-						<span class="mui-icon mui-icon-home"></span>
-						<span class="mui-tab-label">首页</span>
-					</a>
-					<a class="" href="Page/RefreshPage.html">
-						<span class="mui-icon mui-icon-phone" ></span>
-						<span class="mui-tab-label">刷新</span>
-					</a>
-					<a class="">
-						<span class="mui-icon mui-icon-email"></span>
-						<span class="mui-tab-label">邮件</span>
-					</a>
-					<a class="">
-						<span class="mui-icon mui-icon-gear"></span>
-						<span class="mui-tab-label">设置</span>
-					</a>
-				</nav>
-				<div class="mui-content mui-scroll-wrapper">
-					<div class="mui-scroll">
-						<!-- 主界面具体展示内容 -->
-
-						<div id="slider " class="mui-slider ">
-							<div class="mui-slider-group mui-slider-loop ">
-								<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-								<div class="mui-slider-item mui-slider-item-duplicate ">
-									<a href="# ">
-										<img src="http://img0.imgtn.bdimg.com/it/u=2288407753,1170772481&fm=21&gp=0.jpg ">
-									</a>
-								</div>
-								<!-- 第一张 -->
-								<div class="mui-slider-item ">
-									<a href="# ">
-										<img src="https://sf-sponsor.b0.upaiyun.com/45751d8fcd71e4a16c218e0daa265704.png ">
-									</a>
-								</div>
-								<!-- 第二张 -->
-								<div class="mui-slider-item ">
-									<a href="# ">
-										<img src="http://img1.imgtn.bdimg.com/it/u=2755043765,3254509020&fm=11&gp=0.jpg ">
-									</a>
-								</div>
-								<!-- 第三张 -->
-								<div class="mui-slider-item ">
-									<a href="# ">
-										<img src="http://img2.imgtn.bdimg.com/it/u=694727998,1274390428&fm=21&gp=0.jpg ">
-									</a>
-								</div>
-								<!-- 第四张 -->
-								<div class="mui-slider-item ">
-									<a href="# ">
-										<img src="http://img0.imgtn.bdimg.com/it/u=2288407753,1170772481&fm=21&gp=0.jpg ">
-									</a>
-								</div>
-								<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-								<div class="mui-slider-item mui-slider-item-duplicate ">
-									<a href="# ">
-										<img src="https://sf-sponsor.b0.upaiyun.com/45751d8fcd71e4a16c218e0daa265704.png ">
-									</a>
-								</div>
-							</div>
-							<div class="mui-slider-indicator ">
-								<div class="mui-indicator mui-active "></div>
-								<div class="mui-indicator "></div>
-								<div class="mui-indicator "></div>
-								<div class="mui-indicator "></div>
-							</div>
-						</div>
-
-						<ul class="mui-table-view mui-grid-view mui-grid-9">
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-								<a href="#">
-									<span class="mui-icon mui-icon-home"></span>
-									<div class="mui-media-body">Home</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-								<a href="#">
-									<span class="mui-icon mui-icon-email"><span class="mui-badge mui-badge-red">5</span></span>
-									<div class="mui-media-body">Email</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-								<a href="#">
-									<span class="mui-icon mui-icon-chatbubble"></span>
-									<div class="mui-media-body">Chat</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-								<a href="#">
-									<span class="mui-icon mui-icon-location"></span>
-									<div class="mui-media-body">Location</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-								<a href="#">
-									<span class="mui-icon mui-icon-search"></span>
-									<div class="mui-media-body">Search</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-								<a href="#">
-									<span class="mui-icon mui-icon-phone"></span>
-									<div class="mui-media-body">Phone</div>
-								</a>
-							</li>
-						</ul>
-
-					</div>
-				</div>
-				<div class="mui-off-canvas-backdrop"></div>
 			</div>
-		</div>
-		<script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			mui.init()
 
-			function clickRefresh() {
-				window.location.href = 'Page/RefreshPage.html';
-			}
+		</div>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#">
+				<span class="mui-icon mui-icon-home-filled"></span>
+				<span class="mui-tab-label">主页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon mui-icon-paperclip">
+					<span class="mui-badge">5</span>
+				<!--添加显示气泡-->
+				</span>
+				<span class="mui-tab-label">项目信息</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon mui-icon-phone"></span>
+				<span class="mui-tab-label">联系我</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">关于我</span>
+			</a>
+		</nav>
+		<!--处理tabbar点击事件无反应的改写方法-->
+		<script>
+			mui('.mui-bar-tab').on('tap', 'a', function() {
+				document.location.href = this.href;
+			});
 		</script>
 	</body>
 
