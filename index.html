@@ -8,12 +8,29 @@
 		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
 		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+	<style type="text/css">
+		.main {
+			width: 600px
+		}
+		
+		.left {
+			width: 300px;
+			float: left;
+			text-align: right;
+			line-height: 60px
+		}
+		
+		.right {
+			float: right;
+			text-align: right;
+		}
+	</style>
 
 	<body>
 
 		<header class="mui-bar mui-bar-nav">
 			<a id="info" class="mui-icon mui-icon-refresh-filled mui-pull-right" style="color: #999;" href="index.html"></a>
-			<h1 class="mui-title">Axc</h1>
+			<h1 class="mui-title">Axc主页</h1>
 		</header>
 
 		<div class="mui-content">
@@ -23,14 +40,14 @@
 					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
 					<div class="mui-slider-item mui-slider-item-duplicate">
 						<a href="#">
-							<img src="img/lunbo3.jpg">
+							<img src="img/lunbo4.jpeg">
+
 						</a>
 					</div>
 					<!-- 第一张 -->
 					<div class="mui-slider-item">
 						<a href="#">
-							<img src="img/lunbo0.jpg">
-						</a>
+							<img src="img/lunbo0.jpg"></a>
 					</div>
 					<!-- 第二张 -->
 					<div class="mui-slider-item">
@@ -47,7 +64,7 @@
 					<!-- 第四张 -->
 					<div class="mui-slider-item">
 						<a href="#">
-							<img src="img/lunbo3.jpeg">
+							<img src="img/lunbo4.jpeg">
 						</a>
 					</div>
 					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
@@ -57,27 +74,78 @@
 						</a>
 					</div>
 				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
 			</div>
+<hr />
+			<p>最近项目：
+				<a class="right" href="project.html">查看所有项目</a>
+			</p>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="www.baidu.com">
+						<img class="mui-media-object mui-pull-left" src="img/stdata.png">
+						<div class="mui-media-body">
+							杭师大导览机
+							<p class="mui-ellipsis">专为杭师大科技园区定制...</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="www.baidu.com">
+						<img class="mui-media-object mui-pull-left" src="img/cmkj.jpeg">
+						<div class="mui-media-body">
+							创梦空间导游系统
+							<p class="mui-ellipsis">导游+活动+线下资源整合一体化，让园区变得更智慧！</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/stdata.png">
+						<div class="mui-media-body">
+							梦想小镇导览机
+							<p class="mui-ellipsis">让园区游览模式更具有互动性，流程更规范化！</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="img/qjzf.jpeg">
+						<div class="mui-media-body">
+							清洁直分
+							<p class="mui-ellipsis">杭州市环境集团重点项目！绿色回收，环境更美好。</p>
+						</div>
+					</a>
+				</li>
+			</ul>
 
 		</div>
 
+		</br>
+		</br>
+		</br>
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item mui-active" href="#">
 				<span class="mui-icon mui-icon-home-filled"></span>
 				<span class="mui-tab-label">主页</span>
 			</a>
-			<a class="mui-tab-item" href="#tabbar-with-chat">
+			<a class="mui-tab-item" href="project.html">
 				<span class="mui-icon mui-icon-paperclip">
 					<span class="mui-badge">5</span>
 				<!--添加显示气泡-->
 				</span>
 				<span class="mui-tab-label">项目信息</span>
 			</a>
-			<a class="mui-tab-item" href="#tabbar-with-contact">
+			<a class="mui-tab-item" href="contact.html">
 				<span class="mui-icon mui-icon-phone"></span>
 				<span class="mui-tab-label">联系我</span>
 			</a>
-			<a class="mui-tab-item" href="#tabbar-with-map">
+			<a class="mui-tab-item" href="about_me.html">
 				<span class="mui-icon mui-icon-person"></span>
 				<span class="mui-tab-label">关于我</span>
 			</a>
@@ -86,6 +154,10 @@
 		<script>
 			mui('.mui-bar-tab').on('tap', 'a', function() {
 				document.location.href = this.href;
+			});
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
 			});
 		</script>
 	</body>

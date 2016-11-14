@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Axc Home</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a id="info" class="mui-icon mui-icon-refresh-filled mui-pull-right" style="color: #999;" href="about_me.html"></a>
+			<h1 class="mui-title">关于我</h1>
+		</header>
+
+		<div class="mui-content">
+			
+			
+			
+		</div>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">主页</span>
+			</a>
+			<a class="mui-tab-item" href="project.html">
+				<span class="mui-icon mui-icon-paperclip">
+					<span class="mui-badge">5</span>
+				</span>
+				<span class="mui-tab-label">项目信息</span>
+			</a>
+			<a class="mui-tab-item" href="contact.html">
+				<span class="mui-icon mui-icon-phone-filled"></span>
+				<span class="mui-tab-label">联系我</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="#">
+				<span class="mui-icon mui-icon-person-filled"></span>
+				<span class="mui-tab-label">关于我</span>
+			</a>
+		</nav>
+		<!--处理tabbar点击事件无反应的改写方法-->
+		<script>
+			mui('.mui-bar-tab').on('tap', 'a', function() {
+				document.location.href = this.href;
+			});
+		</script>
+	</body>
+
+</html>
