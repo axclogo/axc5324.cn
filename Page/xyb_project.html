@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>洗衣邦项目详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a id="info" class="mui-icon mui-icon-back mui-pull-left" style="color: #999;" onclick="javascript :history.back(-1);"></a>
+			<h1 class="mui-title">洗衣邦</h1>
+		</header>
+
+		<div class="mui-content">
+
+			<ul class="mui-table-view mui-grid-view">
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a href="#">
+						<img class="mui-media-object" src="http://img0.imgtn.bdimg.com/it/u=3248655005,687445483&fm=21&gp=0.jpg">
+						<div class="mui-media-body">洗衣邦线下支持</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a href="#">
+						<img class="mui-media-object" src="http://img2.imgtn.bdimg.com/it/u=3039947507,395661783&fm=21&gp=0.jpg">
+						<div class="mui-media-body">强力营销！</div>
+					</a>
+				</li>
+			</ul>
+
+			<h4>
+				&emsp;1.实现技术：
+			</h4>
+			<hr>
+			<p>
+				<span class="mui-badge mui-btn-grey">1</span>地图，地理围栏和GPS实时定位透传；</br>
+				<span class="mui-badge mui-btn-grey">2</span>特殊的进度指示控件；</br>
+				<span class="mui-badge mui-btn-grey">3</span>app store上传证书失效问题，从2月起上传流程和审核流程有更改，重新注册生产证书等上传事物；</br>
+				<span class="mui-badge mui-btn-grey">4</span>洗衣分享优惠券UI，改了又改改了又改改了又改改了又改改了又改。爆炸；</br>
+				<span class="mui-badge mui-btn-grey">5</span>过度/转场效果；</br>
+				<span class="mui-badge mui-btn-grey">6</span>各种自定义控件（也是从那时候开始对自定义控件感兴趣）；</br>
+			</p>
+			<hr>
+			<h4>
+				&emsp;2.项目说明：
+			</h4>
+			<hr>
+			<p>
+				&emsp;和上面那个“清洁直分”很像，但是这是之前在北京做的，外包活。</br>
+				&emsp; 讲真这里头有好多问题由于时间原因都没来得及解决，不过问题都是代码内部的问题，用户使用都还好，比如有些延时操作和线程都效率低的要死。
+				</br>
+				&emsp; 说实话对我的感觉就是，谜一样莫名其妙就完成了，测试报告也及格</br>
+				&emsp; 其实当初要是时间够我感觉我完全能把优化做得更好（仅限于我负责的模块），现在不知道这项目是第几期了，很久远了吧。
+				</br>
+				&emsp; 在家一键上门取衣，实时查看洗衣进度，预约何时取衣或送衣。
+				</br>
+
+			</p>
+			<h4>
+				&emsp;3.责任描述：
+			</h4>
+			<hr>
+			<p>
+				&emsp;iOS工程师：赵新；</br>
+			</p>
+
+		</div>
+		</br>
+		</br>
+		</br>
+		<nav class="mui-bar mui-bar-tab">
+			<a href="javascript:;" style="width:100%;height:40px;margin:0 auto;background:;position:fixed;bottom:2;text-align:center;" onclick="javascript :history.back(-1);">
+				<!--<div class="mui-tab-item" onclick="javascript :history.back(-1);">-->
+				<span class="mui-icon mui-icon-back" style="color:#808080;"></span>
+				<span class="mui-tab-label" style="color:#808080;">返回</span>
+				<!--</div>-->
+			</a>
+		</nav>
+
+	</body>
+
+	<script>
+		mui('.mui-bar-tab').on('tap', 'a', function() {
+			document.location.href = this.href;
+		});
+	</script>
+
+</html>
