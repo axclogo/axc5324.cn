@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>杭师大导览机项目详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a id="info" class="mui-icon mui-icon-back mui-pull-left" style="color: #999;" onclick="javascript :history.back(-1);"></a>
+			<h1 class="mui-title">杭师大导览机</h1>
+		</header>
+
+		<div class="mui-content">
+			
+			<div id="slider" class="mui-slider">
+									<div class="mui-slider-group mui-slider-loop">
+										<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+										<div class="mui-slider-item mui-slider-item-duplicate">
+											<a href="#">
+												<img src="../img/hsdylt3.jpeg">
+											</a>
+										</div>
+										<!-- 第一张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="../img/hsdylt0.jpeg">
+											</a>
+										</div>
+										<!-- 第二张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="../img/hsdylt1.jpeg">
+											</a>
+										</div>
+										<!-- 第三张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="../img/hsdylt2.jpeg">
+											</a>
+										</div>
+										<!-- 第四张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="../img/hsdylt3.jpeg">
+											</a>
+										</div>
+										<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+										<div class="mui-slider-item mui-slider-item-duplicate">
+											<a href="#">
+												<img src="../img/hsdylt0.jpeg">
+											</a>
+										</div>
+									</div>
+									<div class="mui-slider-indicator">
+										<div class="mui-indicator mui-active"></div>
+										<div class="mui-indicator"></div>
+										<div class="mui-indicator"></div>
+										<div class="mui-indicator"></div>
+									</div>
+								</div>
+			
+			
+			<h4>
+				&emsp;1.实现技术：
+			</h4>
+			<hr>
+			<p>
+				<span class="mui-badge mui-btn-grey">1</span>智石蓝牙Beacon（信标）设备；</br>
+				<span class="mui-badge mui-btn-grey">2</span>HTML5页面设计与实现；</br>
+				<span class="mui-badge mui-btn-grey">3</span>蓝牙室内定位以及Geos 3.5.0框架；</br>
+				<span class="mui-badge mui-btn-grey">4</span>WebView的JS修改CSS参数、嵌套HTML网页与图文混排；</br>
+				<span class="mui-badge mui-btn-grey">5</span>Beacon室内定位达到的移步换景，在不同地点展示不同界面；</br>
+				<span class="mui-badge mui-btn-grey">6</span>在导览机开启定位模式的时候能让硬件设备支持摇一摇；</br>
+				<span class="mui-badge mui-btn-grey">7</span>不同身份的用户登录展现不同的数据权限；</br>
+				<span class="mui-badge mui-btn-grey">8</span>导游与导游视频通话、聊天系统；</br>
+			</p>
+			<hr>
+			<h4>
+				&emsp;2.项目说明：
+			</h4>
+			<hr>
+			<p>
+				&emsp;面向政府园区服务的一套系统中产品之一，系统全称：智慧园区导览系统。产品系列中如下模块：</br>
+				&emsp; 1， 园区摇一摇知所有（摇一摇模块，参观游览者）</br>
+				&emsp; 2， 导游导览规范化（ipad导游机，导游人员配备）</br>
+				&emsp; 3， 活动模块互动体验（HTML5活动模块，与游览者的摇一摇互动）</br>
+				&emsp; ipad端模块全称为：导游机</br>
+			</p>
+			<h4>
+				&emsp;3.责任描述：
+			</h4>
+			<hr>
+			<p>
+				&emsp;项目经理：赵新；</br>
+				&emsp;UI设计：赵新（MUI框架）；</br>
+				&emsp;iOS工程师：赵新；</br>
+				&emsp;项目维护：赵新；</br>
+				&emsp;所有模块开发：赵新；</br>
+				&emsp;负责所有与项目有关的事宜，包括沟通甚至开发票</br>
+			</p>
+
+		</div>
+		</br>
+		</br>
+		</br>
+		<nav class="mui-bar mui-bar-tab">
+			<a href="javascript:;" style="width:100%;height:40px;margin:0 auto;background:;position:fixed;bottom:2;text-align:center;" onclick="javascript :history.back(-1);">
+				<!--<div class="mui-tab-item" onclick="javascript :history.back(-1);">-->
+				<span class="mui-icon mui-icon-back" style="color:#808080;"></span>
+				<span class="mui-tab-label" style="color:#808080;">返回</span>
+				<!--</div>-->
+			</a>
+		</nav>
+
+	</body>
+
+	<script>
+		mui('.mui-bar-tab').on('tap', 'a', function() {
+			document.location.href = this.href;
+		});
+	</script>
+
+</html>

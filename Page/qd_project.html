@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>浅读项目详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a id="info" class="mui-icon mui-icon-back mui-pull-left" style="color: #999;" onclick="javascript :history.back(-1);"></a>
+			<h1 class="mui-title">浅读</h1>
+		</header>
+
+		<div class="mui-content">
+
+			<ul class="mui-table-view mui-grid-view">
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a href="#">
+						<img class="mui-media-object" src="http://img1.imgtn.bdimg.com/it/u=260975026,3939197037&fm=21&gp=0.jpg">
+						<div class="mui-media-body">这张有调调</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a href="#">
+						<img class="mui-media-object" src="http://img4.imgtn.bdimg.com/it/u=2645080906,132729078&fm=21&gp=0.jpg">
+						<div class="mui-media-body">这张也不错</div>
+					</a>
+				</li>
+			</ul>
+
+			<h4>
+				&emsp;1.实现技术：
+			</h4>
+			<hr>
+			<p>
+				<span class="mui-badge mui-btn-grey">1</span>自己练手写着玩的，主要测试自己框架中的UI自定义UI是否兼容；</br>
+				<span class="mui-badge mui-btn-grey">2</span>80%自定义UI组件；</br>
+				<span class="mui-badge mui-btn-grey">3</span>使用CALayer制作图层层面的UI组件；</br>
+				<span class="mui-badge mui-btn-grey">4</span>AxcKit（自命名）组件大部分组件相互组合兼容，少部分组件拥有“组合技”；</br>
+				<span class="mui-badge mui-btn-grey">5</span>Runtime添加关联，维护方便；</br>
+				<span class="mui-badge mui-btn-grey">6</span>除特殊情况外，内存占有量极少；</br>
+			</p>
+			<hr>
+			<h4>
+				&emsp;2.项目说明：
+			</h4>
+			<hr>
+			<p>
+				&emsp;总体来说是一个自己编写的框架的一个衍生产物，从表面来看确实没有什么特别之处。</br>
+				&emsp; 如果从开发者角度研究还是很值得扩展的</br>
+				&emsp; 框架从16年6月初开始没时间维护</br>
+				&emsp; 所有数据接口全部靠抓</br>
+				&emsp; 包括杂志阅读，图书阅读，每日更新最新文章。</br>
+
+			</p>
+			<h4>
+				&emsp;3.责任描述：
+			</h4>
+			<hr>
+			<p>
+				&emsp;项目设计：赵新；</br>
+				&emsp;UI设计：赵新（MUI框架）；</br>
+				&emsp;iOS工程师：赵新；</br>
+				&emsp;项目维护：赵新；</br>
+				&emsp;所有模块开发：赵新；</br>
+			</p>
+
+		</div>
+		</br>
+		</br>
+		</br>
+		<nav class="mui-bar mui-bar-tab">
+			<a href="javascript:;" style="width:100%;height:40px;margin:0 auto;background:;position:fixed;bottom:2;text-align:center;" onclick="javascript :history.back(-1);">
+				<!--<div class="mui-tab-item" onclick="javascript :history.back(-1);">-->
+				<span class="mui-icon mui-icon-back" style="color:#808080;"></span>
+				<span class="mui-tab-label" style="color:#808080;">返回</span>
+				<!--</div>-->
+			</a>
+		</nav>
+
+	</body>
+
+	<script>
+		mui('.mui-bar-tab').on('tap', 'a', function() {
+			document.location.href = this.href;
+		});
+	</script>
+
+</html>
