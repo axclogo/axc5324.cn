@@ -21,7 +21,27 @@
 				手机：<a href="tel:13720049025">13720049025</a> 或者可以  
 				<a href="sms:13720049025">短信我</a>
 			</p>
-			
+			<div>
+<div>hello</div>
+<div>hello</div>
+<div>hello</div>
+</div>
+
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="div">Copy</button>
+
+<!-- 2. Include library -->
+
+
+<!-- 3. Instantiate clipboard -->
+<script>
+var clipboard = new Clipboard('.btn');
+clipboard.on('success', function(e) {
+alert('复制成功');
+});
+clipboard.on('error', function(e) {
+console.log(e);
+});
+</script>
 			
 		</div>
 
