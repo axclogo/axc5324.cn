@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>赵新html摇一摇项目详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a id="info" class="mui-icon mui-icon-back mui-pull-left" style="color: #999;" onclick="javascript :history.back(-1);"></a>
+			<h1 class="mui-title">摇一摇，了解我</h1>
+		</header>
+
+		<div class="mui-content">
+			<h4>
+				&emsp;1.实现技术：
+			</h4>
+			<hr>
+			<p>
+				&emsp;<span class="mui-badge mui-btn-grey">1</span>智石蓝牙Beacon（信标）设备；</br>
+				&emsp;<span class="mui-badge mui-btn-grey">2</span>HTML5页面设计与实现；</br>
+				&emsp;<span class="mui-badge mui-btn-grey">3</span>使用Git特性将页面架构到服务器；</br>
+				&emsp;<span class="mui-badge mui-btn-grey">4</span>MUI框架的使用；</br>
+			</p>
+			<hr>
+			<h4>
+				&emsp;2.项目说明：
+			</h4>
+			<hr>
+			<p>
+				&emsp;自行设计一种自我介绍，然后以HTML的方式呈现。配合摇一摇功能以独特的方式展现出来，灵感作品。</br>
+				&emsp;根据现有技术资源和能力整合出该HTML简介页面。</br>
+				&emsp;该页面为静态页面，主要以熟悉框架和学习MUI中的CSS布局架构为主，学习其中JS的逻辑事件，无关联服务器。</br>
+				&emsp;不得不说MUI在布局和封装上做的比 Amaze UI 框架做的精美很多，与原生iOS系统控件有极大的相似性：简洁、美观。</br>
+				&emsp;该项目（其实也不算项目）只是我向HTML发展的第一个作品，以摇一摇展示效果更佳。
+			</p>
+
+		</div>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="#" onclick="javascript :history.back(-1);">
+				<span class="mui-icon mui-icon-back"></span>
+				<span class="mui-tab-label">返回</span>
+			</a>
+		</nav>
+
+	</body>
+	
+	<script>
+		mui('.mui-tab-item').on('tap', 'a', function() {
+			document.location.href = this.href;
+		});
+	</script>
+
+</html>
