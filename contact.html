@@ -17,33 +17,39 @@
 		</header>
 
 		<div class="mui-content">
-			<p>
-				手机：<a href="tel:13720049025">13720049025</a> 或者可以  
-				<a href="sms:13720049025">短信我</a>
-			</p>
-			<div>
-<div>hello</div>
-<div>hello</div>
-<div>hello</div>
-</div>
-
-<button class="btn" data-clipboard-action="copy" data-clipboard-target="div">Copy</button>
-
-<!-- 2. Include library -->
-
-
-<!-- 3. Instantiate clipboard -->
-<script>
-var clipboard = new Clipboard('.btn');
-clipboard.on('success', function(e) {
-alert('复制成功');
-});
-clipboard.on('error', function(e) {
-console.log(e);
-});
-</script>
 			
+
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>手机</label>
+					<input type="text" value="13720049025">
+				</div>
+				<div class="mui-input-row">
+					<label>邮箱</label>
+					<input type="text" value="axclogo@163.com">
+				</div>
+
+				<div class="mui-input-row mui-plus-visible">
+					<label>Input</label>
+					<input type="text" class="mui-input-speech mui-input-clear" placeholder="语音输入">
+				</div>
+				<div class="mui-button-row">
+					<a class="mui-btn mui-btn-primary" href="tel:13720049025"><span class="mui-icon mui-icon-phone-filled"></span>&nbsp;电话我</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="mui-btn mui-btn-primary" href="sms:13720049025"><span class="mui-icon mui-icon-email-filled"></span>&nbsp;短信我</a>
+
+				</div>
+			</form>
+
+<center>
+	</br>
+	<img src="img/qrcode_for_gh_25068eddbbad_258.jpg"/>
+	<p>
+		扫一扫关注我私人订阅号（其实并没有什么用，但是放个二维码还是比较好看。里面什么都没有，hhhhhhhhhhh）
+	</p>
+</center>
+
 		</div>
+</br></br></br>
 
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item" href="index.html">
