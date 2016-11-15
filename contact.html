@@ -17,13 +17,24 @@
 		</header>
 
 		<div class="mui-content">
-			
 
 			<form class="mui-input-group">
-				<div class="mui-input-row">
-					<label>姓名</label>
-					<input type="text" value="赵新">
-				</div>
+				<ul id="OA_task_2" class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div class="mui-slider-left mui-disabled">
+							<a class="mui-btn mui-btn-green mui-icon mui-icon-phone"></a>
+						</div>
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-yellow mui-icon mui-icon-email"></a>
+						</div>
+						<div class="mui-slider-handle">
+							<center>姓名：赵新
+								<p>←电话【滑动】短信→</p>
+							</center>
+						</div>
+					</li>
+				</ul>
+
 				<div class="mui-input-row">
 					<label>手机</label>
 					<input type="text" value="13720049025">
@@ -44,17 +55,19 @@
 				</div>
 			</form>
 
-<center>
-	</br>
-	<img src="img/qrcode_for_gh_25068eddbbad_258.jpg"/>
-	<p>
-		扫一扫或长按二维码可以关注我私人订阅号（其实并没有什么用，但是放个二维码还是比较好看。里面什么都没有，hhhhhhhhhhh）</br>
-		因为这个页面是静态，所以想说什么或者留言可以到订阅号里随便说，我会不定期查看的。
-	</p>
-</center>
+			<center>
+				</br>
+				<img src="img/qrcode_for_gh_25068eddbbad_258.jpg" />
+				<p>
+					扫一扫或长按二维码可以关注我私人订阅号（其实并没有什么用，但是放个二维码还是比较好看。里面什么都没有，hhhhhhhhhhh）</br>
+					因为这个页面是静态，所以想说什么或者留言可以到订阅号里随便说，我会不定期查看的。
+				</p>
+			</center>
 
 		</div>
-</br></br></br>
+		</br>
+		</br>
+		</br>
 
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item" href="index.html">
@@ -76,11 +89,24 @@
 				<span class="mui-tab-label">关于我</span>
 			</a>
 		</nav>
+
 		<!--处理tabbar点击事件无反应的改写方法-->
 		<script>
 			mui('.mui-bar-tab').on('tap', 'a', function() {
 				document.location.href = this.href;
 			});
+
+			mui.init();
+			(function($) {
+				//第二个demo，向左拖拽后显示操作图标，释放后自动触发的业务逻辑
+				$('#OA_task_2').on('slideleft', '.mui-table-view-cell', function(event) {
+					location.href = "sms:13720049025";
+				});
+				//第二个demo，向右拖拽后显示操作图标，释放后自动触发的业务逻辑
+				$('#OA_task_2').on('slideright', '.mui-table-view-cell', function(event) {
+					location.href = "tel:13720049025";
+				});
+			})(mui);
 		</script>
 	</body>
 
