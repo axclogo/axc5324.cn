@@ -6,7 +6,13 @@
 		<title>赵新html主页</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
-
+		<style>
+			.chart {
+				height: 200px;
+				margin: 0px;
+				padding: 0px;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -23,15 +29,12 @@
 					<div class="mui-slider-item mui-slider-item-duplicate">
 						<ul class="mui-table-view mui-grid-view">
 							<li class="mui-table-view-cell mui-media mui-col-xs-6">
-								<a href="#"><img class="mui-media-object" src="../images/cbd.jpg">
-									<div class="mui-media-body">Color of SIP CBD</div>
+								<a href="#" id="xinertai"><img class="mui-media-object" src="img/xrtkj.jpg">
+									<div class="mui-media-body" style="font-size:11px;">北京信而泰科技股份有限公司</div>
+									<div class="mui-media-body">
+										<p>2015年实习单位</p>
+									</div>
 								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-6">
-								<a href="#"><img class="mui-media-object" src="../images/yuantiao.jpg">
-									<div class="mui-media-body">静静看这世界</div>
-								</a>
-							</li>
 						</ul>
 					</div>
 					<div class="mui-slider-item">
@@ -45,7 +48,7 @@
 								</a>
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-6">
-								<a href="#"><img class="mui-media-object" src="img/zykj.jpg">
+								<a href="#" id="zhongyikeji"><img class="mui-media-object" src="img/zykj.jpg">
 									<div class="mui-media-body" style="font-size:14px;">北京中亿科技有限公司</div>
 									<div class="mui-media-body">
 										<p>2016-1-18至2016-5-20</p>
@@ -57,8 +60,8 @@
 					<div class="mui-slider-item">
 						<ul class="mui-table-view mui-grid-view">
 							<li class="mui-table-view-cell mui-media mui-col-xs-6">
-								<a href="#"><img class="mui-media-object" src="img/xrtkj.jpg">
-								<div class="mui-media-body" style="font-size:11px;">北京信而泰科技股份有限公司</div>
+								<a href="#" id="xinertai"><img class="mui-media-object" src="img/xrtkj.jpg">
+									<div class="mui-media-body" style="font-size:11px;">北京信而泰科技股份有限公司</div>
 									<div class="mui-media-body">
 										<p>2015年实习单位</p>
 									</div>
@@ -70,13 +73,19 @@
 					<div class="mui-slider-item mui-slider-item-duplicate">
 						<ul class="mui-table-view mui-grid-view">
 							<li class="mui-table-view-cell mui-media mui-col-xs-6">
-								<a href="#"><img class="mui-media-object" src="../images/shuijiao.jpg">
-									<div class="mui-media-body">幸福就是可以一起睡觉</div>
+								<a href="#" id="stdatapic"><img class="mui-media-object" src="img/stdata.png">
+									<div class="mui-media-body" style="font-size:14px;">杭州数坦科技有限公司</div>
+									<div class="mui-media-body">
+										<p>2016-6-1至2017-6-1</p>
+									</div>
 								</a>
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-6">
-								<a href="#"><img class="mui-media-object" src="../images/muwu.jpg">
-									<div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
+								<a href="#" id="zhongyikeji"><img class="mui-media-object" src="img/zykj.jpg">
+									<div class="mui-media-body" style="font-size:14px;">北京中亿科技有限公司</div>
+									<div class="mui-media-body">
+										<p>2016-1-18至2016-5-20</p>
+									</div>
 								</a>
 							</li>
 						</ul>
@@ -88,8 +97,19 @@
 					</div>
 				</div>
 
+
+				<hr>
+				<center>
+					<p>编程语言熟练度：</p>
+					<div class="chart" id="pieChart"></div><hr>
+<br/><p>2016年编程语言熟练进度：</p>
+					<div class="chart" id="barChart"></div><hr>
+					<div class="chart" id="lineChart"></div><hr>
+				</center>
+
 			</div>
 
+			<br/><br/><br/>
 			<nav class="mui-bar mui-bar-tab">
 				<a class="mui-tab-item" href="index.html">
 					<span class="mui-icon mui-icon-home"></span>
@@ -112,18 +132,119 @@
 			</nav>
 			<!--处理tabbar点击事件无反应的改写方法-->
 			<script src="js/mui.min.js"></script>
+			<script src="js/echarts-all.js"></script>
 
 			<script>
 				mui('.mui-bar-tab').on('tap', 'a', function() {
 					document.location.href = this.href;
 				});
-				//			var gallery = mui('.mui-slider');
-				//			gallery.slider({
-				//				interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
-				//			});
+				var gallery = mui('.mui-slider');
+				gallery.slider({
+					interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+				});
 				document.getElementById("stdatapic").addEventListener('tap', function() {
-				mui.toast('欢迎体验Hello MUI<br/>asd');
-			});
+					mui.toast('欢迎体验Hello MUI<br/>asd');
+				});
+				document.getElementById("zhongyikeji").addEventListener('tap', function() {
+					mui.toast('欢迎体验Hello MUI<br/>asd');
+				});
+				document.getElementById("xinertai").addEventListener('tap', function() {
+					mui.toast('欢迎体验Hello MUI<br/>asd');
+				});
+
+				var getOption = function(chartType) {
+					var chartOption = chartType == 'pie' ? {
+						calculable: false,
+						series: [{
+							name: '访问来源',
+							type: 'pie',
+							radius: '65%',
+							center: ['50%', '50%'],
+							data: [{
+								value: 335,
+								name: 'C'
+							}, {
+								value: 310,
+								name: 'Swift'
+							}, {
+								value: 234,
+								name: 'HTML-5'
+							}, {
+								value: 135,
+								name: 'PHP'
+							}, {
+								value: 1548,
+								name: 'Object-C'
+							}]
+						}]
+					} : {
+						legend: {
+							data: ['Object-C', 'HTML-5']
+						},
+						grid: {
+							x: 35,
+							x2: 10,
+							y: 30,
+							y2: 25
+						},
+						toolbox: {
+							show: false,
+							feature: {
+								mark: {
+									show: true
+								},
+								dataView: {
+									show: true,
+									readOnly: false
+								},
+								magicType: {
+									show: true,
+									type: ['line', 'bar']
+								},
+								restore: {
+									show: true
+								},
+								saveAsImage: {
+									show: true
+								}
+							}
+						},
+						calculable: false,
+						xAxis: [{
+							type: 'category',
+							data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+						}],
+						yAxis: [{
+							type: 'value',
+							splitArea: {
+								show: true
+							}
+						}],
+						series: [{
+							name: 'Object-C',
+							type: chartType,
+							data: [100, 110, 99, 80, 70, 60, 80, 110, 120, 130, 130, 140]
+						}, {
+							name: 'HTML-5',
+							type: chartType,
+							data: [0,0,0,0,0,0,10, 50, 80, 80, 100, 110]
+						}]
+					};
+					return chartOption;
+				};
+				var byId = function(id) {
+					return document.getElementById(id);
+				};
+				var barChart = echarts.init(byId('barChart'));
+				barChart.setOption(getOption('bar'));
+				var lineChart = echarts.init(byId('lineChart'));
+				lineChart.setOption(getOption('line'));
+				var pieChart = echarts.init(byId('pieChart'));
+				pieChart.setOption(getOption('pie'));
+				byId("echarts").addEventListener('tap', function() {
+					var url = this.getAttribute('data-url');
+					plus.runtime.openURL(url);
+				}, false);
 			</script>
 	</body>
 
