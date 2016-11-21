@@ -16,37 +16,112 @@
 		</header>
 
 		<div class="mui-content">
-			
-			
-			
-		</div>
+			<p>工作经历：</p>
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#"><img class="mui-media-object" src="../images/cbd.jpg">
+									<div class="mui-media-body">Color of SIP CBD</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#"><img class="mui-media-object" src="../images/yuantiao.jpg">
+									<div class="mui-media-body">静静看这世界</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#"><img class="mui-media-object" src="img/stdata.png">
+									<div class="mui-media-body" style="font-size:14px;">杭州数坦科技有限公司</div>
+									<div class="mui-media-body">
+										<p>2016-6-1至2017-6-1</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#"><img class="mui-media-object" src="../images/muwu.jpg">
+									<div class="mui-media-body" style="font-size:14px;">北京中亿科技有限公司</div>
+									<div class="mui-media-body">
+										<p>2016-1-18至2016-5-20</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#"><img class="mui-media-object" src="../images/cbd.jpg">
+								<div class="mui-media-body" style="font-size:11px;">天津风山渐科技有限责任公司</div>
+									<div class="mui-media-body">
+										<p>2015年实习单位</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#"><img class="mui-media-object" src="../images/shuijiao.jpg">
+									<div class="mui-media-body">幸福就是可以一起睡觉</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="#"><img class="mui-media-object" src="../images/muwu.jpg">
+									<div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mui-slider-indicator" style="position: static;background-color: #fff;">
+					<div class="mui-number">
+						<span>1</span> / 2
+					</div>
+				</div>
 
-		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item" href="index.html">
-				<span class="mui-icon mui-icon-home"></span>
-				<span class="mui-tab-label">主页</span>
-			</a>
-			<a class="mui-tab-item" href="project.html">
-				<span class="mui-icon mui-icon-paperclip">
+			</div>
+
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item" href="index.html">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">主页</span>
+				</a>
+				<a class="mui-tab-item" href="project.html">
+					<span class="mui-icon mui-icon-paperclip">
 					<span class="mui-badge">7</span>
-				</span>
-				<span class="mui-tab-label">项目信息</span>
-			</a>
-			<a class="mui-tab-item" href="contact.html">
-				<span class="mui-icon mui-icon-phone"></span>
-				<span class="mui-tab-label">联系我</span>
-			</a>
-			<a class="mui-tab-item mui-active" href="#">
-				<span class="mui-icon mui-icon-person-filled"></span>
-				<span class="mui-tab-label">关于我</span>
-			</a>
-		</nav>
-		<!--处理tabbar点击事件无反应的改写方法-->
-		<script>
-			mui('.mui-bar-tab').on('tap', 'a', function() {
-				document.location.href = this.href;
-			});
-		</script>
+					</span>
+					<span class="mui-tab-label">项目信息</span>
+				</a>
+				<a class="mui-tab-item" href="contact.html">
+					<span class="mui-icon mui-icon-phone"></span>
+					<span class="mui-tab-label">联系我</span>
+				</a>
+				<a class="mui-tab-item mui-active" href="#">
+					<span class="mui-icon mui-icon-person-filled"></span>
+					<span class="mui-tab-label">关于我</span>
+				</a>
+			</nav>
+			<!--处理tabbar点击事件无反应的改写方法-->
+			<script src="js/mui.min.js"></script>
+
+			<script>
+				mui('.mui-bar-tab').on('tap', 'a', function() {
+					document.location.href = this.href;
+				});
+				//			var gallery = mui('.mui-slider');
+				//			gallery.slider({
+				//				interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+				//			});
+			</script>
 	</body>
 
 </html>
