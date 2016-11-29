@@ -103,7 +103,7 @@
 					<p>编程语言熟练度：</p>
 					<div class="chart" id="pieChart" onclick="#"></div><hr>
 <br/><p>2016年编程语言熟练进度：</p>
-					<div class="chart" id="barChart"></div><hr>
+					<div class="chart" id="barChart"></div>
 					<div class="chart" id="lineChart"></div><hr>
 				</center>
 
@@ -241,10 +241,10 @@
 				lineChart.setOption(getOption('line'));
 				var pieChart = echarts.init(byId('pieChart'));
 				pieChart.setOption(getOption('pie'));
-				byId("echarts").addEventListener('tap', function() {
+//				byId("echarts").addEventListener('tap', function() {
 //					var url = this.getAttribute('data-url');
 //					plus.runtime.openURL(url);
-				}, false);
+//				}, false);
 			</script>
 	</body>
 
