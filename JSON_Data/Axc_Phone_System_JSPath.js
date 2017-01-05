@@ -1,5 +1,5 @@
 defineClass('ViewController', {
     onClick: function() {
-    	    console.log('JS补丁修复');
+    	    console.log('JS补丁修复zxcdfadshjfgashdgfj');
     },
 });
