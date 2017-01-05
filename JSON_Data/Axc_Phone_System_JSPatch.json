@@ -1,5 +1,5 @@
 {
-	"patch_one": "defineClass('ViewController', {onClick: function() {console.log('JS补丁修复');},});",
+	"patch_one": "defineClass('ViewController', {onClick: function() {console.log('JS补丁修复哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈');},});",
 	"date": "2017-1-5",
 	"version": "V1.0"
 }
