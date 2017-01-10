@@ -1,5 +1,5 @@
 defineClass('ViewController', {
     onClick: function() {
-    	    console.log('JS补丁修复王鹏帆哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈');
+    	    console.log('的该发生的规范化就卡死的风格');
     },
 });
