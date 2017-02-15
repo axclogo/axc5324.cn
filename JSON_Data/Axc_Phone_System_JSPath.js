@@ -2,7 +2,7 @@ require('UIColor');
 defineClass('ViewController', {
     onClick: function() {
 
-        testLabel.setText("啦啦啦啦啦");
-        testLabel.setBackgroundColor(UIColor.clearColor());
+        self.testLabel().setText("点击发现补丁修改");
+        self.testLabel().setBackgroundColor(UIColor.clearColor());
     },
 });
